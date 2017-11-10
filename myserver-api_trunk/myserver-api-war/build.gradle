@@ -1,0 +1,16 @@
+apply plugin: 'war'
+
+war.archiveName "myserver-api.war"                // gradle build
+
+project.archivesBaseName = "myserver-api"         // gradle install
+
+dependencies {
+    // RestliServlet or HttpRequestHandlerServlet, choose either one
+    compile spec.linkedin.pegasus.restliServer
+    compile spec.linkedin.pegasus.restliSpringBridge
+    compile spec.eclipse.jetty.jettyServer
+    compile spec.eclipse.jetty.jettyWebapp
+    compile spec.springframework.springWeb
+    compile spec.springframework.springContext
+    compile project(':myserver-api')
+}

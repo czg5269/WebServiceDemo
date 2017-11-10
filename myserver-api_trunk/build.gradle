@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenLocal()      // ~/.m2/repoitory/
+        mavenCentral()    // https://repo1.maven.org/maven2/
+    }
+    // rest-api: apply plugin: ‘pegasus’
+    dependencies { 
+      classpath 'com.linkedin.pegasus:gradle-plugins:' + pegasusVersion
+    }
+}
+
+apply from: 'product_spec.gradle'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.1'
+}
+
+allprojects {
+    apply plugin: 'idea'
+}
+
+subprojects {
+    apply plugin: 'maven' // gradle install
+
+    afterEvaluate {
+        if (project.plugins.hasPlugin('java')) {
+            sourceCompatibility = JavaVersion.VERSION_1_8
+        }
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    // gradle install
+    project.group = 'com.changgou.hackthon'
+    project.version = '0.0.1'
+}

@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+dependencies {
+    compile spec.linkedin.pegasus.restliServer
+    compile spec.linkedin.pegasus.r2
+    compile spec.linkedin.pegasus.d2
+    compile spec.linkedin.pegasus.restliClient
+    compile spec.apache.httpcomponents.httpclient
+    compile spec.fasterxml.jackson.core.jacksonAnnotations
+    compile spec.fasterxml.jackson.core.jacksonDatabind
+    compile spec.newsoftvalley.myserver.dataTemplate
+    compile spec.newsoftvalley.myserver.restClient
+    compile spec.springframework.springContext
+    testCompile spec.testng.testng.testng
+}

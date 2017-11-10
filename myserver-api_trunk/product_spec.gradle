@@ -1,0 +1,52 @@
+ext.spec = [
+    'linkedin' : [
+        'pegasus' : [
+            'data' : 'com.linkedin.pegasus:data:' + pegasusVersion,
+            'restliServer' : 'com.linkedin.pegasus:restli-server:' + pegasusVersion,
+            'restliCommon':'com.linkedin.pegasus:restli-common:' + pegasusVersion,
+            'r2' : 'com.linkedin.pegasus:r2:' + pegasusVersion,
+            'd2' : 'com.linkedin.pegasus:d2:' + pegasusVersion,
+            'restliClient' : 'com.linkedin.pegasus:restli-client:' + pegasusVersion,
+            'restliSpringBridge' : 'com.linkedin.pegasus:restli-spring-bridge:' + pegasusVersion
+        ]
+    ],
+    'newsoftvalley' : [
+            'myserver' : [
+                    'dataTemplate' : 'com.newsoftvalley.myserver:myserver-data-template:' + myserverVersion,
+                    'restClient' : 'com.newsoftvalley.myserver:myserver-rest-client:' + myserverVersion
+            ]
+    ],
+    'eclipse' : [
+        'jetty' : [
+            'jettyServer' : 'org.eclipse.jetty:jetty-server:' + jettyVersion,
+            'jettyWebapp' : 'org.eclipse.jetty:jetty-webapp:' + jettyVersion
+        ]
+    ],
+    'apache' : [
+            'httpcomponents' : [
+                    'httpclient' : 'org.apache.httpcomponents:httpclient:' + httpcomponentsVersion
+            ]
+    ],
+    'testng' : [
+            'testng' : [
+                    'testng' : 'org.testng:testng:' + testngVersion
+            ]
+    ],
+    'fasterxml' : [
+            'jackson' : [
+                    'core' :[
+                            'jacksonAnnotations' : 'com.fasterxml.jackson.core:jackson-annotations:' + jacksonVersion,
+                            'jacksonDatabind' : 'com.fasterxml.jackson.core:jackson-databind:' + jacksonVersion
+                    ]
+            ]
+    ],
+    'javax' : [
+            'servlet': [
+                    'servletApi' : 'javax.servlet:javax.servlet-api:' + servletVersion
+            ]
+    ],
+    'springframework' : [
+            'springWeb' : 'org.springframework:spring-web:' + springVersion,
+            'springContext' : 'org.springframework:spring-context:' + springVersion
+    ]
+]

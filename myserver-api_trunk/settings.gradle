@@ -1,0 +1,4 @@
+include ':myserver-api'
+include ':myserver-api-integTest'
+include ':myserver-api-war'
+include ':listener'
