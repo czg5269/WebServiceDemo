@@ -8,8 +8,8 @@ dependencies {
     compile spec.apache.httpcomponents.httpclient
     compile spec.fasterxml.jackson.core.jacksonAnnotations
     compile spec.fasterxml.jackson.core.jacksonDatabind
-    compile spec.newsoftvalley.myserver.dataTemplate
-    compile spec.newsoftvalley.myserver.restClient
+    compile spec.changgou.myserver.dataTemplate
+    compile spec.changgou.myserver.restClient
     compile spec.springframework.springContext
     testCompile spec.testng.testng.testng
 }
